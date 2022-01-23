@@ -26,6 +26,11 @@ for (const count of Object.values(parentsCounts)){
   }
 }
 
+// Check for E4 (more than 1 root)
+let difference = parentsArray.filter(x => !childrenArray.includes(x));
+if (difference.length > 1) {
+  return 'E4';
+}
 
 
 
