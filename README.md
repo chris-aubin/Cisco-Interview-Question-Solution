@@ -11,7 +11,7 @@ Where the first letter inside each parentheses represents a parent node and the 
 Detect the following errors, and if any are found, output them in priority order (error number smallest to largest).
 
 #### Errors:
-* E1 - Invalid input formart (missing symbols, more than one blank space as pair separators)
+* E1 - Invalid input format (missing symbols, more than one blank space as pair separators)
 * E2 - Duplicate (Parent, Child) pairs
 * E3 - Invalid binary tree (parent has more than 2 children)
 * E4 - Input contains a forest (multiple root nodes)
