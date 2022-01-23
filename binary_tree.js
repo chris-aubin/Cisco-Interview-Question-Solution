@@ -8,6 +8,28 @@ let parentsArray = pairsArrays.map(i => i[0]);
 // Create array of only child nodes
 let childrenArray = pairsArrays.map(i => i[1]);
 
+// Check for E1 (invalid input format (missing symbols, more than one blank space as pair separators))
+// Check for double space
+if (nodes.indexOf('  ') !== -1) {
+	return 'E2';
+}
+let open = false;
+// Check parenthesis
+for (let i = 0; i < nodes.length; i++) {
+  if (nodes[i] === '(') {
+    if (open === true) {
+      return 'E2';
+    }
+    open = true;
+  }
+  if (nodes[i] === ')') {
+    if (open === false) {
+      return 'E2';
+    }
+    open = false;
+  }
+}
+
 // Check for E2 (duplicate (Parent, Child) pairs)
 let setPairsStrings = new Set(pairsStrings);
 if (setPairsStrings.size !== pairsStrings.length) {
