@@ -13,7 +13,7 @@ Detect the following errors, and if any are found, output them in priority order
 #### Errors:
 * E1 - Invalid input formart (missing symbols, more than one blank space as pair separators)
 * E2 - Duplicate (Parent, Child) pairs
-* E3 - Invalid binary tree (parent has 2 or more children)
+* E3 - Invalid binary tree (parent has more than 2 children)
 * E4 - Input contains a forest (multiple root nodes)
 * E5 - Input contain cycles within the tree (ex: child's child = parent)
 
@@ -30,7 +30,7 @@ Detect the following errors, and if any are found, output them in priority order
 > (A,B) (A,C) (A,D) (B,E) -> E3
 
 ##### Example #5
-> (A,C) (A,C) (B,D) (E,F) (F,G) (F,H) -> E4
+> (A,B) (A,C) (B,D) (E,F) (F,G) (F,H) -> E4
 
 ##### Example #6
 > (A,B) (A,C) (B,D) (D,C) -> E5
