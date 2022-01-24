@@ -18,7 +18,7 @@ Detect the following errors, and if any are found, output them in priority order
 * E5 - Input contain cycles within the tree (ex: child's child = parent)
 
 ##### Example #1:
-> (B,D) (D,E) (A,B) (B,D) (D,C) -> (A(B(D(E(G))))(C(F)))
+> (A,B) (B,D) (D,E) (A,C) (C,F) (E,G) -> (A(B(D(E(G))))(C(F)))
 
 ##### Example #2
 > (A,B) (A,C)  (B,E) (B,F) -> E1
