@@ -42,3 +42,7 @@ Detect the following errors, and if any are found, output them in priority order
 > (A,B) (A,C) (B,D) (D,C) -> E5
 
 Same problem, slightly different wording/ examples: https://www.chegg.com/homework-help/questions-and-answers/3-tree-binary-tree-represented-sequence-parent-child-pairs-example-b-c-b-g-c-h-e-f-b-d-c-e-q42330174
+
+Java solution: https://leetcode.com/discuss/general-discussion/1503088/tiktok-online-asssesment-is-this-a-tree-hackerrank-solution
+
+C++ solution: https://github.com/kwkevinlin/Algorithms-Practice/blob/master/Binary_Tree_S_Expression.cpp
