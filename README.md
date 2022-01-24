@@ -24,18 +24,21 @@ Detect the following errors, and if any are found, output them in priority order
 > (A,B) (A,C) (B,E) (B,F) -> (A(B(E)(F))(C))
 
 ##### Example #3
-> (A,B) (A,C)  &nbsp;(B,E) (B,F) -> (A(B(E)(F))(C))
+> (A,B) (A,C)  &nbsp;(B,E) (B,F) -> E1
 
 ##### Example #4
-> (A,B) (B,C) (A,B) (A,C) -> E2
+> (A,B) (A,C) (B,E)) (B,F) -> E1
 
 ##### Example #5
-> (A,B) (A,C) (A,D) (B,E) -> E3
+> (A,B) (B,C) (A,B) (A,C) -> E2
 
 ##### Example #6
-> (A,B) (A,C) (B,D) (E,F) (F,G) (F,H) -> E4
+> (A,B) (A,C) (A,D) (B,E) -> E3
 
 ##### Example #7
+> (A,B) (A,C) (B,D) (E,F) (F,G) (F,H) -> E4
+
+##### Example #8
 > (A,B) (A,C) (B,D) (D,C) -> E5
 
 Similar problem: https://www.chegg.com/homework-help/questions-and-answers/3-tree-binary-tree-represented-sequence-parent-child-pairs-example-b-c-b-g-c-h-e-f-b-d-c-e-q42330174
