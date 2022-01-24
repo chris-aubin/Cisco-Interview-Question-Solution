@@ -34,3 +34,5 @@ Detect the following errors, and if any are found, output them in priority order
 
 ##### Example #6
 > (A,B) (A,C) (B,D) (D,C) -> E5
+
+Similar problem: https://www.chegg.com/homework-help/questions-and-answers/3-tree-binary-tree-represented-sequence-parent-child-pairs-example-b-c-b-g-c-h-e-f-b-d-c-e-q42330174
