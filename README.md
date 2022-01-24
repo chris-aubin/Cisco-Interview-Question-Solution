@@ -1,4 +1,4 @@
-# Cisco Interview Question Solution
+# Cisco Interview Question: Is this a Binary Tree?
 
 Given a binary tree reprsented in a string as a sequence of parent-child pairs in no particular order, i.e.:
 
