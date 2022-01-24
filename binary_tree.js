@@ -39,6 +39,9 @@ function SExpression(nodes) {
     // Create array of only child nodes
     let childrenArray = pairsArrays.map(i => i[1]);
     
+    // Initialise root variable
+    let root;
+    
     // Initialise object to represent tree in which the key is a char that  
     // represents parent and the value is an array of that parent's children, 
     // i.e. {A: [B,C]}
@@ -67,6 +70,7 @@ function SExpression(nodes) {
     if (difference.size > 1) {
         return 'E4';
     }
+    root = difference.values().next().value;
 
     // Count how many time each child occurs
     let childrenCounts = childrenArray.reduce((prev, curr) => {
@@ -79,4 +83,21 @@ function SExpression(nodes) {
             return 'E5';
         }
     }
+    
+    function SExpressionHelper(root, tree) {
+        if (tree[root]) {
+            if (tree[root][1]) {
+                return root + '(' + SExpressionHelper(tree[root][0], tree) + ')' + '(' + SExpressionHelper(tree[root][1], tree) + ')';
+            }
+            else {
+                return root + '(' + SExpressionHelper(tree[root][0], tree) + ')';
+            }
+        }
+        else {
+            return root;    
+        }
+    }
+    
+    return '(' + SExpressionHelper(root, tree) + ')';
+    
 }
