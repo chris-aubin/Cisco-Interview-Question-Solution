@@ -46,3 +46,5 @@ Same problem, slightly different wording/ examples: https://www.chegg.com/homewo
 Java solution: https://leetcode.com/discuss/general-discussion/1503088/tiktok-online-asssesment-is-this-a-tree-hackerrank-solution
 
 C++ solution: https://github.com/kwkevinlin/Algorithms-Practice/blob/master/Binary_Tree_S_Expression.cpp
+
+Another JS solution: https://gist.github.com/fortil/be86e8daf433d7f45ded4d94daf84c27
