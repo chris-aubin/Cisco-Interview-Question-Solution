@@ -21,7 +21,7 @@ Detect the following errors, and if any are found, output them in priority order
 > (B,D) (D,E) (A,B) (B,D) (D,C) -> (A(B(D(E(G))))(C(F)))
 
 ##### Example #2
-> (A,B) (A,C) (B, E) (B,F) -> E1
+> (A,B) (A,C)  (B,E) (B,F) -> E1
 
 ##### Example #3
 > (A,B) (B,C) (A,B) (A,C) -> E2
